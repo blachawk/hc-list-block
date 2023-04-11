@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "blachawk/hc-list-block",
+	"version": "0.1.0",
+	"title": "HC List Block",
+	"category": "text",
+	"description": "A custom list block with nested block support",
+	"keywords": ["nffa", "lists", "list", "item"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "_hclb",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"listOrdered": {
+			"type": "boolean",
+			"default": false
+		},
+		"_cover": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {
+		"attributes": {
+			"_cover": "https://placehold.co/600x400/000000/FFF"
+		}
+	}
+}
